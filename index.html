@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Kore SharePoint Test</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/kore-web-sdk@11.21.1/dist/umd/kore-web-sdk-umd-chat.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+<script>
+  KoreChatSDK.chatConfig.botOptions.API_KEY_CONFIG.KEY = 
+  "78b7ecad98164c3aad5f0ffffa742e1effa56bbeea66489cb614717d814acd87st0a";
+
+  KoreChatSDK.chatConfig.botOptions.API_KEY_CONFIG.URL =
+  "https://platform.kore.ai";
+
+  KoreChatSDK.chatConfig.botOptions.botInfo = {
+    name: "PHS Search Test"
+  };
+
+  new KoreChatSDK.chatWindow().show(KoreChatSDK.chatConfig);
+</script>
+
+</body>
+</html>
