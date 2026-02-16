@@ -24,9 +24,14 @@
   KoreChatSDK.chatConfig.botOptions.API_KEY_CONFIG.URL =
   "https://platform.kore.ai";
 
+  let value=localStorage.getItem("sessionTracking_1003200513e27693");
+  
+
   KoreChatSDK.chatConfig.botOptions.botInfo = {
     name: "PHS Search Test"
   };
+  KoreChatSDK.chatConfig.botOptions.botInfo.customData=value.upn;
+  console.log(value.upn);
 
   new KoreChatSDK.chatWindow().show(KoreChatSDK.chatConfig);
 </script>
