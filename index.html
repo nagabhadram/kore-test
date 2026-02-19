@@ -23,15 +23,13 @@
 
   KoreChatSDK.chatConfig.botOptions.API_KEY_CONFIG.URL =
   "https://platform.kore.ai";
-
-  let value=JSON.stringify(localStorage.getItem("sessionTracking_1003200513e27693"));
   
 
   KoreChatSDK.chatConfig.botOptions.botInfo = {
     name: "PHS Search Test"
   };
-  KoreChatSDK.chatConfig.botOptions.botInfo.customData=value;
-  console.log(value);
+  KoreChatSDK.chatConfig.botOptions.botInfo.customData={"email":"nagabhadramc@pronixinc.com"}
+  console.log(KoreChatSDK.chatConfig.botOptions.botInfo.customData);
 
   new KoreChatSDK.chatWindow().show(KoreChatSDK.chatConfig);
 </script>
